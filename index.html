@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трасування променів — Сфера</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Формування зображення сфери</h1>
+    <p>Візуалізація методом трасування променів</p>
+</header>
+
+<main class="container">
+
+    <section class="scene">
+        <h2>Графічна сцена</h2>
+
+        <canvas id="rayCanvas" width="600" height="450">
+            Ваш браузер не підтримує Canvas.
+        </canvas>
+
+        <button id="renderBtn">Побудувати сферу</button>
+        <p id="renderInfo">Натисніть кнопку для побудови зображення.</p>
+    </section>
+
+    <aside class="controls">
+        <h2>Параметри сфери</h2>
+
+        <label for="sphereColor">Колір сфери</label>
+        <input type="color" id="sphereColor" value="#8b2635">
+
+        <label for="sphereRadius">Радіус сфери</label>
+        <input type="range" id="sphereRadius"
+               min="0.5" max="2" step="0.1" value="1">
+        <span id="radiusValue">1.0</span>
+
+        <label for="lightX">Положення світла по X</label>
+        <input type="range" id="lightX"
+               min="-5" max="5" step="0.5" value="-3">
+
+        <label for="lightY">Положення світла по Y</label>
+        <input type="range" id="lightY"
+               min="-5" max="5" step="0.5" value="4">
+
+        <label for="brightness">Інтенсивність освітлення</label>
+        <input type="range" id="brightness"
+               min="0" max="2" step="0.1" value="1">
+
+        <button id="resetBtn">Скинути налаштування</button>
+    </aside>
+
+</main>
+
+<footer>
+    <p>Курсова робота з комп'ютерної графіки</p>
+</footer>
+
+<script src="js/raytracing.js"></script>
+</body>
+</html>

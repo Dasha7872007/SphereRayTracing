@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SphereRayTracing.iml" filepath="$PROJECT_DIR$/SphereRayTracing.iml" />
+    </modules>
+  </component>
+</project>
